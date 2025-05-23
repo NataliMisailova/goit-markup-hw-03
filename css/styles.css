@@ -291,8 +291,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
+   
 }
 
 .footer-text {
