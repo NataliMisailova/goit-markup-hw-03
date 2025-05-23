@@ -251,10 +251,6 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 120px;
 }
 
-.made-container {
-    border-top: none;
-}
-
 .made-title {
     min-width: 218px;
     margin: 0 auto;
@@ -280,6 +276,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .card {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .made-subtitle {
