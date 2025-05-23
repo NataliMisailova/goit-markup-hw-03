@@ -6,11 +6,39 @@ body {
 
 ul, ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+ .header-nav {
+    display: flex;
+    align-items: center;
+ }
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -20,13 +48,26 @@ a {
     text-transform: uppercase;
     color: #4d5ae5;
 }
+
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
 .header-logo .logo-past {
     color: #2e2f42;
 }
 .footer-logo .logo-part {
     color: #f4f4fd;
 }
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 .nav-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -35,8 +76,17 @@ a {
 }
 .contacts {
     font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 .contacts-link {
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -53,6 +103,8 @@ a {
 
 .hero {
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -62,6 +114,9 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -72,6 +127,12 @@ a {
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .hero-btn:hover,
@@ -79,11 +140,36 @@ a {
     background-color: #404BBF;
 }
 
-.features {}
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-.features-list {}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-.features-item {}
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.features-subtitle {
+    margin-bottom: 8px;
+}
 
 .features-subtitle,
 .taste-subtitle,
@@ -106,6 +192,14 @@ a {
 
 .taste {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.taste-title {
+    min-width: 162px;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .taste-title,
@@ -119,16 +213,32 @@ a {
     color: #2e2f42;
 }
 
-.taste-list {}
+.taste-list {
+    display: flex;
+    gap: 24px;
+}
 
 .taste-item {
     background-color: #fff;
+    border: 1px solid #F4F4FD;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
 
-.taste-image {}
+.taste-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.basket {
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
 
 .taste-subtitle {
     text-align: center;
+    margin-bottom: 8px;
     
 }
 
@@ -136,26 +246,60 @@ a {
     text-align: center;  
 }
 
-.made {}
+.made {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-.made-title {}
+.made-title {
+    min-width: 218px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
 
-.made-list {}
+.made-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
 
-.made-item {}
+.made-item {
+    width: calc((100% - 48px) / 3);
+    
+}
 
-.made-image {}
+.made-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+}
 
-.made-subtitle {}
+.made-subtitle {
+    margin-bottom: 8px;
+}
 
 .made-text {}
 
 .page-footer{
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+
+.footer-logo {
+    display: block;
+    margin-bottom: 16px;
+}
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
+
